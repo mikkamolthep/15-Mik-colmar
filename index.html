@@ -31,38 +31,45 @@
 	<body class="w-screen min-h-dvh">
 		<header class="mx-6 h-16 flex justify-between">
 			<!-- title-logo-name -->
-			<div class="title flex items-center">
+			<div class="title hidden md:flex items-center">
 				<div class="title-logo">
 					<img src="images/ic-logo.svg" alt="logo">
 				</div>
-				<div class="title-name text-[32px] ">
+				<div class="title-name text-[32px]">
 					<span class="">COLMAR</span><span class="text-gray-400">ACADEMY</span>
 				</div>
 			</div>
 
 			<!-- title nav -->
-			<nav class="flex items-center">
+			<nav class="hidden md:flex items-center">
 				<a href="#" class="pr-4">On campus</a>
 				<a href="#" class="pr-4">Online</a>
 				<a href="#" class="pr-4">For companies</a>
 				<a href="#">Sing in</a>
 			</nav>
+
+			<nav class="mobile-logo h-16 flex items-center space-x-23 md:hidden">
+				<a href="#"><img src="images/ic-logo.svg" alt=""></a>
+				<a href="#"><img src="images/ic-on-campus.svg" alt=""></a>
+				<a href="#"><img src="images/ic-online.svg" alt=""></a>
+				<a href="#"><img src="images/ic-login.svg" alt=""></a>
+			</nav>
 		</header>
 
 		<!-- Learn someting -->
-		<section class="hero flex  items-center bg-[#D8D8D8]">
+		<section class="hero flex flex-col md:flex-row  items-center bg-[#D8D8D8]">
 			<div class="basis-3/5 mx-6 my-8 w-full">
 				<img src="images/banner.jpg" alt="banner">
 			</div>
-			<div class="basis-2/5 my-8 ">
-				<h2 class="text-[50px] text-gray-600 font-semibold mb-4">Learn something new everyday</h2>
-				<p class=" mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-				<p class="cursor-pointer bg-stone-800 w-[300px] py-2 text-white text-center inline-block ">Start here</p>
+			<div class="basis-2/5 md:my-8 ">
+				<h2 class="text-[35px] ml-4 mb-8 text-gray-600 font-semibold md:text-[50px]  md:mb-4">Learn something new everyday</h2>
+				<p class="ml-4 mb-6 md:mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				<p class="cursor-pointer bg-stone-800 w-[300px] py-2 text-white text-center block mx-auto mb-8">Start here</p>
 			</div>
 		</section>
 
 		<!-- It doesn't hurt -->
-		<section class="information flex bg-[#F0F4F3] pb-8">
+		<section class="information flex flex-col md:flex-row bg-[#F0F4F3] pb-8">
 			<!-- info_left -->
 			<div class="basis-3/5 mx-6 flex-col">
 				<img src="images/information-main.jpg" alt="information-main" class="w-full  my-8">
