@@ -28,7 +28,7 @@
 		</style>
 	</head>
 
-	<body class="w-full min-h-dvh">
+	<body class="w-screen min-h-dvh">
 		<header class="mx-6 h-16 flex justify-between">
 			<!-- title-logo-name -->
 			<div class="title flex items-center">
@@ -44,67 +44,75 @@
 			<nav class="flex items-center">
 				<a href="#" class="pr-4">On campus</a>
 				<a href="#" class="pr-4">Online</a>
-				<a href="#" class="pr-4">or companies</a>
+				<a href="#" class="pr-4">For companies</a>
 				<a href="#">Sing in</a>
 			</nav>
 		</header>
 
 		<!-- Learn someting -->
-		<section class="hero flex items-center bg-[#D8D8D8]">
-			<div class="mx-6 my-8 w-[60%]">
-				<img src="images/banner.jpg" alt="banner" class="w-full h-full object-cover">
+		<section class="hero flex  items-center bg-[#D8D8D8]">
+			<div class="basis-3/5 mx-6 my-8 w-full">
+				<img src="images/banner.jpg" alt="banner">
 			</div>
-			<div class="w-full h-full object-cover">
+			<div class="basis-2/5 my-8 ">
 				<h2 class="text-[50px] text-gray-600 font-semibold mb-4">Learn something new everyday</h2>
-				<p class="text-xl mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-				<p class="cursor-pointer bg-stone-800 w-[300px] py-2 text-xl text-white text-center inline-block ">Start here</p>
+				<p class=" mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				<p class="cursor-pointer bg-stone-800 w-[300px] py-2 text-white text-center inline-block ">Start here</p>
 			</div>
 		</section>
 
 		<!-- It doesn't hurt -->
-		<section class="information flex">
+		<section class="information flex bg-[#F0F4F3] pb-8">
 			<!-- info_left -->
-			<div class="info_left">
-				<img src="images/information-main.jpg" alt="information-main">
-				<h2>It doesn't hurt to keep practicing</h2>
-				<p>“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</p>
-				<p>Emanuel, Sr Strategist at Hiring.com</p>
+			<div class="basis-3/5 mx-6 flex-col">
+				<img src="images/information-main.jpg" alt="information-main" class="w-full  my-8">
+				<h2 class="mb-6 text-[45px]  text-gray-600 font-semibold">It doesn't hurt to keep practicing</h2>
+				<p class="mb-4">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p><br><br><br>
+					<p class="">Emanuel, Sr Strategist at Hiring.com</p>
 			</div>
 
 			<!-- info_right -->
-			<div class="info_right">
-				<div>
-					<img src="images/information-orientation.jpg" alt="information-orientation">
-					<h3>Orientation date</h3>
-					<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-					<p class="hover:cursor-pointer text-blue-500">Read more</p>
+			<div class="basis-2/5 flex-col pt-8">
+				<div class="flex">
+					<img src="images/information-orientation.jpg" alt="information-orientation" class="h-auto w-[35%] p-4">
+					<div class="flex flex-col justify-center">
+						<h3 class="mb-2 text-xl text-gray-600 font-medium">Orientation date</h3>
+						<p class="mb-2">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+						<p class="hover:cursor-pointer text-blue-500">Read more</p>
+					</div>
 				</div>
-				<div>
-					<img src="images/information-campus.jpg" alt="information-campus">
-					<h3>Our campus</h3>
-					<p>Find which campus is close by you</p>
+
+				<div class="flex">
+					<img src="images/information-campus.jpg" alt="information-campus" class="h-auto w-[35%] p-4">
+					<div class="flex flex-col justify-center">
+					<h3 class="mb-2 text-xl text-gray-600 font-medium">Our campus</h3>
+					<p class="mb-2">Find which campus is close by you</p>
 					<p class="hover:cursor-pointer text-blue-500">Read more</p>
+					</div>
 				</div>
-				<div>
-					<img src="images/information-guest-lecture.jpg" alt="information-guest-lecture">
-					<h3>Our guest lecture</h3>
-					<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+
+				<div class="flex">
+					<img src="images/information-guest-lecture.jpg" alt="information-guest-lecture" class="h-auto w-[35%] p-4">
+					<div class="flex flex-col justify-center">
+					<h3 class="mb-2 text text-xl text-gray-600 font-medium">Our guest lecture</h3>
+					<p class="mb-2">Join a keynote with Oliver Sack about music in medical treatment</p>
 					<p class="hover:cursor-pointer text-blue-500">Read more</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- start learning -->
-		<section class="course">
-			<div class="header-course">
-				<h2>Start learning</h2>
+		<section class= "bg-slate-200 ">
+			<div class="inline text-center">
+				<h2 class=" py-8 text-[45px]  text-gray-500 font-semibold">Start learning</h2>
 			</div>
-			<div class="course-box">
+			<div class="grid grid-cols-3 gap-8 mx-18 pb-8">
 				<!-- software -->
 				<div class="software">
-					<img src="images/course-software.jpg" alt="course-software">
-					<h3>Software engineering</h3>
-					<p>COURSES</p>
+					<img src="images/course-software.jpg" alt="course-software" class="h-auto">
+					<h3 class="text-lg text-gray-600 font-medium">Software engineering</h3>
+					<p >COURSES</p>
 					<p>Web Development,Mobile Development,iOT,APIs</p>
 				</div>
 
@@ -151,20 +159,21 @@
 		</section>
 
 		<!-- thesis -->
-		<section class="thesis">
+		<section class="felx bg-sky-50">
 			<div>
-				<h2>Thesis exhibit</h2>
+				<h2 class="text-center py-8 text-[45px]  text-gray-500 font-semibold">Thesis exhibit</h2>
 			</div>
 
+			<div>
 			<!-- thesis-left -->
-			<div class="thesis-left">
-				<video src="videos/thesis.mp4" controls></video>
+			<div class="basis-3/5 w-[60%] ml-6">
+				<video src="videos/thesis.mp4" controls class="mb-6"></video>
 				<h3>Reimagine urban</h3>
 				<p>“Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.”</p>
 			</div>
 
 			<!-- thesis-right -->
-			<div class="fisma">
+			<div class=" basis-2/5">
 				<img src="images/thesis-fisma.jpg" alt="thesis-fisma">
 				<h3>Fisma:Design and Prototype</h3>
 				<p>Designer showcase of new prototype product</p>
@@ -175,6 +184,7 @@
 				<h3>Now and then</h3>
 				<p>Research study about New YorK</p>
 			</div>
+			
 		</section>
 
 		<footer>
